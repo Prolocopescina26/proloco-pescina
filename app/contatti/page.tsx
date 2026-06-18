@@ -371,7 +371,7 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 24,
     alignItems: "stretch",
     breakInside: "avoid",
-    WebkitColumnBreakInside: "avoid",
+    (WebkitBreakInside as any): "avoid",
   },
   cardLarge: {
     background: "#fffdf9",
