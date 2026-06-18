@@ -1,0 +1,51 @@
+export default function EventiPage() {
+  return (
+    <main
+      style={{
+        maxWidth: "1200px",
+        margin: "0 auto",
+        padding: "80px 20px",
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "48px",
+          marginBottom: "40px",
+        }}
+      >
+        Eventi
+      </h1>
+
+      <div
+        style={{
+          display: "grid",
+          gap: "24px",
+        }}
+      >
+        <div style={card}>
+          <h2>Festa del Paese</h2>
+          <p>15 Agosto 2026</p>
+          <p>Tradizioni, musica e gastronomia.</p>
+        </div>
+
+        <div style={card}>
+          <h2>Cinema all'aperto</h2>
+          <p>20 Luglio 2026</p>
+          <p>Film sotto le stelle.</p>
+        </div>
+
+        <div style={card}>
+          <h2>Sport Day</h2>
+          <p>5 Settembre 2026</p>
+          <p>Attività sportive per tutte le età.</p>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+const card = {
+  padding: "24px",
+  borderRadius: "16px",
+  border: "1px solid #e5e7eb",
+};
