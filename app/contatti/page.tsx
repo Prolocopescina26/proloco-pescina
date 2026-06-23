@@ -371,7 +371,6 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 24,
     alignItems: "stretch",
     breakInside: "avoid",
-    (WebkitBreakInside as any): "avoid",
   },
   cardLarge: {
     background: "#fffdf9",
@@ -397,7 +396,6 @@ const styles: Record<string, React.CSSProperties> = {
   },
   hoursRow: {
     display: "flex",
-    justifyContent: "span-between",
     alignItems: "center",
     justifyContent: "space-between",
     fontSize: 15,
