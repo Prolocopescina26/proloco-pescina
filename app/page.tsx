@@ -537,8 +537,9 @@ const styles: Record<string, React.CSSProperties> = {
     border: "1px solid rgba(225, 48, 108, 0.25)",
     fontWeight: 600,
     boxSizing: "border-box",
-    width: "fit-content",
+    width: "100%",
     maxWidth: "100%",
+    flexShrink: 0,
     overflow: "hidden"
   },
   facebookLink: { 
@@ -555,8 +556,9 @@ const styles: Record<string, React.CSSProperties> = {
     border: "1px solid rgba(24, 119, 242, 0.25)",
     fontWeight: 600,
     boxSizing: "border-box",
-    width: "fit-content",
+    width: "100%",
     maxWidth: "100%",
+    flexShrink: 0,
     overflow: "hidden"
   },
   socialIconSmall: { 
