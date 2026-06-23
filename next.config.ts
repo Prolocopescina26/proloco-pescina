@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // Rimuovi o commenta la riga "output: 'export'"
   images: {
     unoptimized: true,
   },
