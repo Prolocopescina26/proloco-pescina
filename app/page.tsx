@@ -471,7 +471,7 @@ const styles: Record<string, React.CSSProperties> = {
     maxWidth: 1200, 
     margin: "0 auto", 
     display: "grid", 
-    gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr)) 80px", 
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", 
     gap: 32, 
     alignItems: "flex-start" 
   },
