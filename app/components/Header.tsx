@@ -63,21 +63,11 @@ export default function Header() {
           { href: "/eventi", label: "In programma" },
           { href: "/eventi/storico", label: "Storico eventi" },
         ]} />
-        <Link href="/" style={styles.link}>
-          Home
-        </Link>
-        <Link href="/documenti" style={styles.link}>
-          Documenti
-        </Link>
-        <Link href="/news" style={styles.link}>
-          News
-        </Link>
-        <Link href="/valutaci" style={styles.link}>
-          Valutaci
-        </Link>
-        <Link href="/contatti" style={styles.link}>
-          Contatti
-        </Link>
+        <Link href="/" style={styles.link}>Home</Link>
+        <Link href="/documenti" style={styles.link}>Documenti</Link>
+        <Link href="/news" style={styles.link}>News</Link>
+        <Link href="/valutaci" style={styles.link}>Valutaci</Link>
+        <Link href="/contatti" style={styles.link}>Contatti</Link>
       </nav>
     </header>
   );
@@ -94,74 +84,34 @@ const styles: any = {
     alignItems: "center",
     justifyContent: "space-between",
     gap: 16,
-    padding: "18px 28px",
+    padding: "10px 20px", // Leggermente ridotto per mobile
     background: "rgba(255,255,255,0.96)",
     backdropFilter: "blur(16px)",
     borderBottom: "1px solid rgba(15, 23, 42, 0.08)",
   },
-  brand: {
-    display: "flex",
-    alignItems: "center",
-  },
-  logo: {
-    display: "flex",
-    alignItems: "center",
-    textDecoration: "none",
-  },
-logoImg: {
-    height: 56,
+  brand: { display: "flex", alignItems: "center" },
+  logo: { display: "flex", alignItems: "center", textDecoration: "none" },
+  logoImg: {
+    height: "auto",
+    maxHeight: "45px", // Più piccolo su mobile
     width: "auto",
     filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))",
-    padding: "4px 8px",
-    borderRadius: 12,
+    padding: "4px",
+    borderRadius: 8,
     background: "rgba(255,255,255,0.7)",
-    transition: "background 0.2s ease",
+    transition: "all 0.2s ease",
   },
   nav: {
     display: "flex",
     flexWrap: "wrap",
-    gap: 18,
+    gap: "10px", // Ridotto per stare in meno spazio
     alignItems: "center",
+    justifyContent: "flex-end",
   },
-  dropdown: {
-    position: "relative",
-  },
-  linkButton: {
-    all: "unset",
-    cursor: "pointer",
-    color: "#0B3D91",
-    fontWeight: 700,
-    fontSize: 14,
-    padding: "8px 10px",
-    borderRadius: 10,
-  },
-  dropdownMenu: {
-    position: "absolute",
-    top: "110%",
-    left: 0,
-    minWidth: 220,
-    padding: 12,
-    background: "white",
-    borderRadius: 18,
-    boxShadow: "0 18px 40px rgba(15, 23, 42, 0.12)",
-    display: "flex",
-    flexDirection: "column",
-    gap: 8,
-    zIndex: 50,
-  },
-  dropdownLink: {
-    color: "#0B3D91",
-    textDecoration: "none",
-    fontSize: 14,
-    fontWeight: 700,
-    padding: "10px 12px",
-    borderRadius: 12,
-    transition: "background 0.2s ease",
-  },
-  link: {
-    color: "#0B3D91",
-    textDecoration: "none",
-    fontWeight: 700,
-    fontSize: 14,
-  },
+  // ... resto degli stili invariato
+  dropdown: { position: "relative" },
+  linkButton: { all: "unset", cursor: "pointer", color: "#0B3D91", fontWeight: 700, fontSize: 13, padding: "8px 5px" },
+  dropdownMenu: { position: "absolute", top: "110%", left: 0, minWidth: 200, padding: 12, background: "white", borderRadius: 18, boxShadow: "0 18px 40px rgba(15, 23, 42, 0.12)", display: "flex", flexDirection: "column", gap: 8, zIndex: 50 },
+  dropdownLink: { color: "#0B3D91", textDecoration: "none", fontSize: 13, fontWeight: 700, padding: "8px 10px", borderRadius: 12 },
+  link: { color: "#0B3D91", textDecoration: "none", fontWeight: 700, fontSize: 13 },
 };
