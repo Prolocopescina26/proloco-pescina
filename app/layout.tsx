@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Pro Loco Pescina",
   description: "Sito ufficiale Pro Loco Pescina",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -41,7 +44,6 @@ export default function RootLayout({
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  // L'intero schermo del computer prende lo sfondo caldo della palette del logo
   html: {
     background: "#f7f4eb",
     backgroundColor: "#f7f4eb",
@@ -57,8 +59,6 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     flexDirection: "column",
   },
-  // Il "foglio" del sito si ferma a 1400px sul PC creando lo spazio laterale,
-  // ma lo spazio esterno sarà una bellissima ed elegante cornice avorio!
   main: {
     paddingTop: 90, 
     maxWidth: 1400,
@@ -67,6 +67,6 @@ const styles: Record<string, React.CSSProperties> = {
     flexGrow: 1,
     background: "#f7f4eb",
     backgroundColor: "#f7f4eb",
-    boxShadow: "0 0 50px rgba(45, 74, 62, 0.03)", // Una leggera ombra impercettibile per staccare dal fondo esterno
+    boxShadow: "0 0 50px rgba(45, 74, 62, 0.03)",
   },
 };
