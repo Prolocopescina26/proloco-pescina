@@ -54,12 +54,7 @@ export default function LaNostraStoriaPage() {
             >
               <img src={slides[activeIndex]} alt={`Slide ${activeIndex + 1}`} style={styles.slideImg} />
               
-              {/* Overlay Contatti sull'ultima slide, in stile brand */}
-              {activeIndex === slides.length - 1 && (
-                <div style={styles.emailOverlayBar}>
-                  <p style={styles.emailOverlayText}>📧 prolocopescina2026@gmail.com  •  🌐 www.prolocopescina.it</p>
-                </div>
-              )}
+              
             </motion.div>
           </AnimatePresence>
         </div>
